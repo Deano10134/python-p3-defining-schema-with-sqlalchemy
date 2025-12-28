@@ -2,8 +2,8 @@
 
 # lib/sqlalchemy_sandbox.py
 
-from sqlalchemy import Column, Integer, String, create_engine
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String, create_engine # type: ignore
+from sqlalchemy.orm import declarative_base  # type: ignore
 
 Base = declarative_base()
 
